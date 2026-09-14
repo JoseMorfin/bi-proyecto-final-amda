@@ -5,6 +5,22 @@ Fuente: Reporte Mercado Interno Automotor Ligeros, AMDA, agosto 2026 (cifras de 
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JoseMorfin/bi-proyecto-final-amda/blob/main/PROYECTO_FINAL_BI.ipynb)
 
+## Qué pide Edgar (resumen de la rúbrica)
+
+Proyecto = 40% del curso, más 10% del dashboard. Se presenta en **15 minutos ± 2** (fuera del rango, −10%).
+
+| Criterio | Peso | Dónde va en el cuaderno |
+|---|---|---|
+| Propuesta de negocio (hipótesis u oportunidad para un sector) | 5% | sección 1 |
+| Análisis de datos y metadatos | 5% | sección 2 |
+| EDA: cómo están organizados y distribuidos los datos | 10% | sección 3 |
+| Técnica de ciencia de datos (supervisado, no supervisado, NLP o imágenes; al menos una) | 10% | sección 4 |
+| Data storytelling y visualización | 5% | sección 5 |
+| Conclusiones y aportaciones | 5% | sección 6 |
+| Dashboard interactivo en Streamlit, dinámico y con varios widgets | 10% | `main.py` |
+
+**Ojo:** la rúbrica dice que la base de datos de la app de Streamlit *de la clase* es obligatoria; el reporte AMDA es complemento. Cuando Edgar comparta esa base, va en `datos/` y se integra al análisis.
+
 ## Qué hay en este repositorio
 
 | archivo | qué es |
@@ -29,6 +45,7 @@ archivos a Colab. Si cambia un csv en el repo, el cuaderno lo ve al volver a cor
 | `hibridos_electricos_por_estado_2026.csv` | pág. 33 | 13 |
 | `compradores_por_region_2025_2026.csv` | pág. 34 | 7 |
 | `financiamiento_ene_jul_2017_2026.csv` | pág. 16 | 10 |
+| `pronostico_amda_2026.csv` | pág. 35 (pronóstico oficial y ajustado por mes) | 12 |
 
 Todo se comprobó contra los totales del mismo PDF:
 
@@ -37,6 +54,7 @@ Todo se comprobó contra los totales del mismo PDF:
 - Marcas: importado y nacional suman exacto lo del PDF en los dos años.
 - Híbridos por estado: suman 129,359, el total del reporte.
 - Financiamiento: el % calculado da igual que el del PDF.
+- Pronóstico: enero-agosto observado + septiembre-diciembre estimado da 1,568,109 (oficial) y 1,684,522 (ajustado), igual que la tabla del PDF.
 
 Dos cosas a tener en cuenta (sirven para la parte de calidad de datos):
 
